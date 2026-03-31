@@ -1,26 +1,16 @@
 # Alphabet Catching Game
 
-**x86 Assembly game** — Catch falling alphabet characters to score points.
+8088 assembly based game where the player catches falling alphabets using keyboard controls.
 
-## How to play
-- **Left Arrow:** Move catcher left
-- **Right Arrow:** Move catcher right
-- **Goal:** Catch falling letters to score; miss 10 and game over
+## Tech Stack
+- 8088 Assembly
 
-## Build & Run
-Requires x86 16-bit assembly environment (DOS/NASM or TASM):
+## Setup
+- Use an appropriate 8088/8086 environment or emulator
 
-```bash
-nasm -f bin game.asm -o game.com
-# Or with TASM:
-tasm game.asm
-tlink /t game.obj
-```
-
-Run in a DOS emulator (DosBox, Virtual Machine, etc.).
+## Run
+- Assemble and run game.asm in your emulator/workflow
 
 ## Features
-- Randomized letter positions and timing
-- Keyboard interrupt handler for responsive controls
-- Score and miss tracking
-- Game over after 10 misses
+- Keyboard controlled gameplay
+- Timer based falling objects
